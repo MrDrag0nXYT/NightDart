@@ -1,43 +1,50 @@
 <center>
 <img src="docs/NightDart-title.png">
-<p><b>NightDart</b> - Paper plugin that adds a sleeping dart!</p>
+<p><b>NightDart</b> - Плагин для Paper, добавляющий усыпляющие дротики!</p>
 
-<u>English</u> | <b><a href="README_RU.md">Russian</a></b>
+<b><a href="README.md">English</a></b> | <u>Russian</u>
 </center>
 
 ***
 
-# 🚀 Features
+# 🚀 Особенности
 
-- Fully **customizable**!
-- **Cooldown** for usage
-- **HEX colors** and full MiniMessage support!
+- Полностью **настраиваемый**!
+- **Кулдауны** на использование
+- Поддержка **HEX кодов** и полного форматирования MiniMessage!
 
-# 💾 Requirements
+# 💾 Требования
 
-- Java **17+**
-- Paper (or forks such as Purpur) **1.18+** <u>(not Spigot/CraftBukkit)</u>
+- Java **17 или новее**
+- Paper (или его форки, такие как Purpur) **1.18 или новее** <u>(Spigot и CraftBukkit НЕ ПОДДЕРЖИВАЮТСЯ И НЕ БУДУТ!!!)</u>
 
-# ⚡ Commands and permissions
+# ⚡ Команды и права
 
 ## /nightdart
-Command for broadcasting message
 
 > [!TIP]
-> Alias: **/dart**
+> Сокращённый вариант: **/dart**
 
 ### Subcommands:
-- /nightdart give [count] [player]
-  - Permission: `nightdart.player.give`
+- /nightdart give [количество] [игрок]
+  - Право: `nightdart.player.give`
 - /nightdart reload
-  - Permission: `nightdart.admin.reload`
+  - Право: `nightdart.admin.reload`
 
-### Permission for use: `nightdart.player.use`
+### Разрешение на использование: `nightdart.player.use`
 
+# 📸 Как это выглядит
+![Screenshot](docs/Screenshot.png)
 
-# 📜 Metrics
+<details><summary>В виде GIF</summary>
 
-You can check statistic about this plugin [here](https://bstats.org/plugin/bukkit/NightBroadcast/23354) and disable sending in `config.yml` by setting `enable-metrics: false`
+![GIF with showcase](docs/HowItWork.gif)
+
+</details>
+
+# 📜 Метрика
+
+Вы можете посмотреть статистику использования плагина на серверах [тут](https://bstats.org/plugin/bukkit/NightDart/23806) и отключить отправку в `config.yml` установив `enable-metrics: false`
 
 
 
@@ -45,12 +52,12 @@ You can check statistic about this plugin [here](https://bstats.org/plugin/bukki
 
 
 
-# ⚙ Other information
+# ⚙ Дополнительно
 
-### If you find a bug or want to help with development, feel free to contact me
-- Contact links [here](https://drakoshaslv.ru/)
+### Если вы нашли баг или хотите помочь в разработке - не стесняйтесь обращаться ко мне
+- Ссылки на контакты [тут](https://drakoshaslv.ru/)
 
-### You can also (optionally) donate me:
+### Также (по желанию) вы можете дать мне денег:
 - [DonationAlerts](https://www.donationalerts.com/r/mrdrag0nxyt)
 - TON:
   ```
@@ -63,5 +70,5 @@ You can check statistic about this plugin [here](https://bstats.org/plugin/bukki
 
 
 
-<center><h3>Made specially for <a href="https://nshard.ru">NightShard</a></h3></center>
+<center><h3>Сделано специально для <a href="https://nshard.ru">NightShard</a></h3></center>
 

@@ -1,0 +1,63 @@
+#
+#   ███╗░░██╗██╗░██████╗░██╗░░██╗████████╗██████╗░░█████╗░██████╗░████████╗
+#   ████╗░██║██║██╔════╝░██║░░██║╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝
+#   ██╔██╗██║██║██║░░██╗░███████║░░░██║░░░██║░░██║███████║██████╔╝░░░██║░░░
+#   ██║╚████║██║██║░░╚██╗██╔══██║░░░██║░░░██║░░██║██╔══██║██╔══██╗░░░██║░░░
+#   ██║░╚███║██║╚██████╔╝██║░░██║░░░██║░░░██████╔╝██║░░██║██║░░██║░░░██║░░░
+#   ╚═╝░░╚══╝╚═╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
+#
+#          V 1.0.0   |   Author: MrDrag0nXYT (https://drakoshaslv.ru)
+#           Source code: https://github.com/MrDrag0nXYT/ TODO
+#
+
+# Enable BStats metrics? You can see it here: https://bstats.org/plugin/bukkit/ TODO
+enable-metrics: true
+
+dart:
+  material: SPECTRAL_ARROW
+  name: "<#a880ff>[☄]</#a880ff> <#fcfcfc>Усыпляющий дротик"
+  lore:
+    - " "
+    - " <#fffafa>Усыпляет жертву на 5 секунд "
+    - " "
+  damage: 1 # 0.5 HP
+  velocity-multiplier: 2
+  crawl-time: 3 # seconds
+  cooldown: 2 # seconds
+
+  effects:
+    BLINDNESS: # available names: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+      duration: 3
+      amplifier: 1
+
+
+
+title:
+  enabled: true
+  time:
+    fade-in: 10
+    stay: 70
+    fade-out: 20
+  title: "<gradient:#aaaaaa:#fcfcfc:#aaaaaa>Оглушён!</gradient>"
+  subtitle: "<#fcfcfc>В вас попали <#a880ff>усыпляющим дротиком</#a880ff>"
+  actionbar: ""
+
+
+
+messages:
+  no-permission:
+    - "<#745c97>NightDart <#c0c0c0>› <#dc143c>У вас недостаточно прав для выполнения этой команды!"
+  usage:
+    - "<#745c97>NightDart <#c0c0c0>› <#fcfcfc>Информация"
+    - " <#c0c0c0>‣ <click:suggest_command:'/nightdart reload'><#745c97>/nightdart reload</click> <#c0c0c0>- <#fcfcfc>перезагрузить плагин"
+    - " <#c0c0c0>‣ <click:suggest_command:'/nightdart give'><#745c97>/nightdart give [ник] [количество]</click> <#c0c0c0>- <#fcfcfc>получить дротик"
+  given:
+    - "<#745c97>NightDart <#c0c0c0>› <#fcfcfc>Выдано %count% дротиков игроку %player%"
+  invalid-number:
+    - "<#745c97>NightDart <#c0c0c0>› <#fcfcfc>Вы ввели неправильное число!"
+  not-found:
+    - "<#745c97>NightDart <#c0c0c0>› <#fcfcfc>Игрок %player% не найден"
+  reloaded:
+    - "<#745c97>NightDart <#c0c0c0>› <#00ff7f>Плагин успешно перезагружен!"
+  cooldown:
+    - "<#745c97>NightDart <#c0c0c0>› <#dc143c>Подождите ещё %timeLeft% секунд перед повторным выстрелом!"

@@ -4,3 +4,34 @@ main: zxc.MrDrag0nXYT.nightDart.NightDart
 api-version: '1.18'
 authors: [ MrDrag0nXYT (drakoshaslv) ]
 website: https://drakoshaslv.ru
+
+commands:
+  nightdart:
+    aliases:
+      - dart
+
+permissions:
+  nightdart.player.give:
+    default: false
+  nightdart.player.use:
+    default: true
+
+  nightdart.admin.reload:
+    default: op
+
+  nightdart.player.*:
+    children:
+      nightdart.player.give: true
+      nightdart.player.use: true
+    default: false
+
+  nightdart.admin.*:
+    children:
+      nightdart.admin.reload: true
+    default: op
+
+  nightdart.*:
+    children:
+      nightdart.player.*: true
+      nightdart.admin.*: true
+    default: op

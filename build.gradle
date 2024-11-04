@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 group = 'zxc.MrDrag0nXYT'
@@ -19,6 +20,11 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
+
+    implementation("net.kyori:adventure-text-minimessage:4.17.0")
+    implementation("net.kyori:adventure-text-serializer-legacy:4.17.0")
+
+    implementation("org.bstats:bstats-bukkit:3.0.2")
 }
 
 def targetJavaVersion = 17
@@ -46,4 +52,20 @@ processResources {
     filesMatching('plugin.yml') {
         expand props
     }
+}
+
+shadowJar {
+    archiveClassifier.set('')
+//    relocate 'net.kyori', 'zxc.mrdrag0nxyt.net.kyori'
+
+//    dependencies {
+//        include(dependency('net.kyori:adventure-text-minimessage'))
+//    }
+
+    mergeServiceFiles()
+    configurations = [project.configurations.runtimeClasspath]
+}
+
+tasks.build {
+    dependsOn shadowJar
 }

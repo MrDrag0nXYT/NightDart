@@ -7,10 +7,9 @@
 #   ╚═╝░░╚══╝╚═╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
 #
 #          V 1.0.0   |   Author: MrDrag0nXYT (https://drakoshaslv.ru)
-#           Source code: https://github.com/MrDrag0nXYT/ TODO
-#
+#           Source code: https://github.com/MrDrag0nXYT/NightDart
 
-# Enable BStats metrics? You can see it here: https://bstats.org/plugin/bukkit/ TODO
+# Enable BStats metrics? You can see it here: https://bstats.org/plugin/bukkit/NightDart/23806
 enable-metrics: true
 
 dart:

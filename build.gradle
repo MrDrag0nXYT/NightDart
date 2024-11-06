@@ -56,6 +56,7 @@ processResources {
 
 shadowJar {
     archiveClassifier.set('')
+    relocate 'org.bstats', 'zxc.mrdrag0nxyt.org.bstats'
 //    relocate 'net.kyori', 'zxc.mrdrag0nxyt.net.kyori'
 
 //    dependencies {
